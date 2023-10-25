@@ -1,13 +1,78 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="https://github.com/reinheimermat.png"
+      type="image/x-icon"
+    />
+    <title>Agregador de links</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+
+  <body data-bs-theme="light">
+    <main class="container d-flex flex-column align-items-center pt-5">
+      <!-- logo -->
+      <section class="profile text-center fw-bold">
+        <img
+          src="https://github.com/reinheimermat.png"
+          class="mx-auto"
+          id="image"
+          style="height: 125px"
+          alt="foto de perfil"
+        />
+        <p class="mb-0">@reinheimermat</p>
+      </section>
+
+      <!-- modo noturno -->
+      <section class="my-2">
+        <div class="form-check form-switch d-flex align-items-center gap-2">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="dark-mode"
+          />
+          <label class="form-check-label mt-1" for="dark-mode"
+            >Modo noturno</label
+          >
+        </div>
+      </section>
+
+      <section class="technologies d-flex gap-3 mb-3">
+        <img class="mb-0" src="./assets/bootstrap.png"  alt="">
+        <img class="mb-0" src="./assets/javascript.png"  alt="">
+        <img class="mb-0" src="./assets/reactjs.png" alt="">
+        <img class="mb-0" src="./assets/sass.png" alt="">
+      </section>
+
+      <!-- buttons -->
+      <section class="text-center d-flex flex-column w-100" style="max-width: 30rem">
+
+        <a class="py-3 mb-2 links_styles text-black fw-bold" href="https://github.com/reinheimermat/" target="_blank"><i class="bi bi-github">
+            </i> Github
+        </a>
+
+        <a class="py-3 my-2 links_styles text-black fw-bold" href="https://www.linkedin.com/in/reinheimermat/" target="_blank"><i class="bi bi-linkedin">
+            </i> Linkedin
+        </a>
+
+        <a class="py-3 my-2 links_styles text-black fw-bold" href="https://reinheimermat.github.io/meteora/" target="_blank"><i class="bi bi-bag">
+            </i> Projeto Meteora
+        </a>
+
+        <a class="py-3 my-2 links_styles text-black fw-bold" href="https://organofut.vercel.app/" target="_blank">
+            <i class="bi bi-diagram-3"></i> Projeto Organofut
+        </a>
+
+        <a class="py-3 my-2 links_styles text-black fw-bold" href="https://serenatto-coffee-shop.vercel.app/" target="_blank">
+            <i class="bi bi-cup-hot"></i> Projeto Serenatto Coffee Shop
+        </a>
+
+      </section>
+
+    </main>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

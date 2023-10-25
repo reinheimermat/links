@@ -1,4 +1,5 @@
 {
+  "homepage": "https://reinheimermat.github.io/links",
   "name": "project",
   "private": true,
   "version": "0.0.0",
@@ -6,9 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "sass": "^1.69.4",
     "vite": "^4.4.5"
   }
 }
